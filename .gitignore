@@ -1,0 +1,6 @@
+work/
+install/
+riscvtoolkit/
+*.tar.xz
+*.sha256
+*.log
