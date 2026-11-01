@@ -92,5 +92,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           source versions.env
+          { echo 'Built from these pinned sources (`versions.env`):'; echo
+            echo '```sh'; cat versions.env; echo '```'; } > notes.md
           gh release create "$TOOLKIT_VERSION" riscvtoolkit-*.tar.xz riscvtoolkit-*.sha256 \
-            --title "riscvtoolkit $TOOLKIT_VERSION" --notes-file versions.env
+            --title "riscvtoolkit $TOOLKIT_VERSION" --notes-file notes.md
