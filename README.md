@@ -1,5 +1,7 @@
 # riscvtoolkit
 
+[![release](https://github.com/saursin/riscvtoolkit/actions/workflows/release.yml/badge.svg)](https://github.com/saursin/riscvtoolkit/actions/workflows/release.yml)
+
 Prebuilt RISC-V tools for x86-64 Linux, built from pinned sources ([versions.env](versions.env)):
 
 | Tool | Notes |
